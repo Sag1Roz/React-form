@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  direction: rtl;
+}
+
+@layer components {
+  .input {
+    @apply border outline-none py-1 px-5;
+  }
+  .button {
+    @apply border col-span-2 bg-red-600 text-white transition-all hover:bg-red-500;
+  }
+}
